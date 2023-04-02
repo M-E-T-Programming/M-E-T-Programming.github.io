@@ -10,20 +10,63 @@
 
         * { font-family: "Source Sans Pro"; }
         body {
-            width: 100vw;
-            height: 100vh;
+            min-width: 100vw;
+            min-height: 100vh;
             background: linear-gradient(135deg, #1d1b27, #343042);
             color: aliceblue;
+        }
+        h1, h2 {
+            text-shadow: 0 0 10px white;
+        }
+        a {
+            color: lightcyan;
+            transition: 0.3s;
+        }
+        a:hover {
+            color: aliceblue;
+            text-shadow: 0 0 3px white;
+        }
+        
+        .descText, .helloText, .logo, .ourprojectsText, .outprojectsList {
+            position: absolute;
+        }
+
+        .logo {
+            top: 15vh;
+            left: 5vh;
+            width: 70vh;
+            height: 70vh;
+        }
+        .helloText {
+            top: 12.5vh;
+            left: 80vh;
+            font-size: 8vh;
+        }
+        .descText {
+            top: 25vh;
+            left: 80vh;
+            font-size: 3vh;
+        }
+        .ourprojectsText {
+            top: 32.5vh;
+            left: 80vh;
+            font-size: 5vh;
+        }
+        .outprojectsList {
+            top: 40vh;
+            left: 80vh;
+            font-size: 3vh;
         }
     </style>
 </head>
 <body>
-    <h1>Hello!</h1>
-    <p>We're a group of programmers!</p>
-    <h2>Some of our projects:</h2>
-    <ul>
+    <img src="metlogobetter.png" class="logo">
+    <h1 class="helloText">Hello!</h1>
+    <p class="descText">We're a group of programmers!</p>
+    <h2 class="ourprojectsText">Some of our projects:</h2>
+    <ul class="outprojectsList">
         <li><a href="https://github.com/M-E-T-Programming/GDBOS">GDBOS!</a></li>
-        <li><a href="https://github.com/M-E-T-Programming/mtos5-gdbos">MattoOS 5!</a></li>
+        <li><a href="https://github.com/M-E-T-Programming/mtos-gdbos">MattoOS 5!</a></li>
     </ul>
 </body>
 </html>
